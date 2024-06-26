@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <!-- google fonts link here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Css Link Here  -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Dashboard Area Start  -->
+    <div class="a2n-nxt_dashboard">
+      <!-- Sidebar menu  -->
+      <aside class="a2n-nxt_sidebar">
+        <div class="a2n_nav-mobile">
+          <a id="a2n_navbar-toggle" href="#!"><span></span></a>
+        </div>
+        <div class="a2n-dash__logo">
+          <a href="#">
+            <img src="./assets/images/NextGen Learning White 250.webp" alt=""
+          /></a>
+        </div>
+        <ul id="a2n_nav-list">
+          <li>
+            <a href="#my_dashboard"
+              ><img src="./assets/images/SideMenu Icons/dashboard.svg" alt="" />
+              Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#my_profile"
+              ><img src="./assets/images/SideMenu Icons/user 1.svg" alt="" />
+              Profile</a
+            >
+          </li>
+          <li>
+            <a href="#my_courses"
+              ><img
+                src="./assets/images/SideMenu Icons/online-learning 1.svg"
+                alt=""
+              />
+              My Courses</a
+            >
+          </li>
+          <li>
+            <a href="#my_certificates"
+              ><img src="./assets/images/SideMenu Icons/g2253.svg" alt="" /> My
+              Certificates</a
+            >
+          </li>
+          <li>
+            <a href="#my_learning"
+              ><img src="./assets/images/SideMenu Icons/layer1.svg" alt="" />
+              Unlimited Learning</a
+            >
+          </li>
+          <li>
+            <a href="#my_saved_courses"
+              ><img
+                src="./assets/images/SideMenu Icons/E-learning_course_download.svg"
+                alt=""
+              />
+              Saved Courses</a
+            >
+          </li>
+          <li>
+            <a href="#my_offers"
+              ><img src="./assets/images/SideMenu Icons/Group.svg" alt="" />
+              Special Offers</a
+            >
+          </li>
+          <li>
+            <a href="#my_orders"
+              ><img
+                src="./assets/images/SideMenu Icons/Group 1000003915.svg"
+                alt=""
+              />
+              My Orders</a
+            >
+          </li>
+          <li>
+            <a href="#my_student_card"
+              ><img
+                src="./assets/images/SideMenu Icons/Group 1000003916.svg"
+                alt=""
+              />
+              Student Card</a
+            >
+          </li>
+          <li>
+            <a href="#my_support"
+              ><img
+                src="./assets/images/SideMenu Icons/Group 1000003914.svg"
+                alt=""
+              />
+              Support</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <!-- All tabs container  -->
+      <main class="a2n-dash_container">
+        <!-- top nav start -->
+        <nav class="a2n_top_nav">
+          <div class="top_start a2n_user_box">
+            <div class="top_st_user">
+              <img src="./assets/images/Rectangle 37.webp" alt="" />
+            </div>
+            <div class="user_details">
+              <h4>Hello, <b>Emma Taylor</b></h4>
+              <h5>Check your activities in this dashboard.</h5>
+            </div>
+          </div>
+          <div class="top_end a2n_user_box">
+            <div class="a2n_search">
+              <form action="#">
+                <input type="text" placeholder="Search..." />
+                <img src="./assets/images/Group 12.svg" alt="" />
+              </form>
+            </div>
+            <div class="a2n_end_user a2n_user_box">
+              <div class="top_st_user">
+                <img src="./assets/images/Rectangle 37.webp" alt="" />
+                <span class="active_tip a2n_tip"></span>
+              </div>
+              <div class="user_details">
+                <h4>Emma Taylor</h4>
+                <h5>UX/UI Designer</h5>
+              </div>
+              <a class="icon_box" href="#">
+                <img src="./assets/images/Group 1000004018.svg" alt="" />
+                <span class="icon_tip a2n_tip"> 2 </span>
+              </a>
+              <div class="a2n_user_log">
+                <ul>
+                  <li>
+                    <a href="#my_profile"
+                      ><i class="far fa-user"></i> Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#my_saved_courses"
+                      ><i class="fas fa-book-open"></i> Saved Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-sign-out-alt me-1"></i> Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="a2n_top-btn">
+          <a href="#"
+            >Get access to a course library of 3000+ courses for Lifetime at
+            £149. Find out more.
+            <i class="fa fa-external-link" aria-hidden="true"></i
+          ></a>
+        </div>
+        <!-- top nav end -->
+
+        <!-- Dashboard Tab start  -->
+        <div id="my_dashboard" class="a2n_dash_tabs">
+          <div class="a2n-dash_grid">
+            <div class="dash_items">
+              <div class="a2n_dash_card a2n_dash_card-1">
+                <h2>53</h2>
+                <div class="course_count">
+                  <h5>Enrolled Courses</h5>
+                  <img src="./assets/images/Group.svg" alt="" />
+                </div>
+              </div>
+              <div class="a2n_dash_card a2n_dash_card-2">
+                <h2>96</h2>
+                <div class="course_count">
+                  <h5>Completed Courses</h5>
+                  <img src="./assets/images/Group 1000004111.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="a2n_dash_card-3">
+              <img src="./assets/images/Group 1000004083.webp" alt="" />
+            </div>
+          </div>
+          <div class="a2n-dash_course_container">
+            <div class="a2n_course-card">
+              <h3>Enroll Courses</h3>
+              <div class="a2n_course_progress">
+                <div class="a2n_progress_box">
+                  <h2>82<span>%</span></h2>
+                </div>
+                <div class="a2n_progress_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="234"
+                    height="229"
+                    viewBox="0 0 234 229"
+                    fill="none"
+                  >
+                    <g filter="url(#filter0_d_1401_2148)">
+                      <path
+                        d="M50.1418 135.798C57.8527 143.567 67.4208 149.224 77.9322 152.227C88.4436 155.231 99.5472 155.481 110.183 152.954C120.818 150.427 130.629 145.207 138.68 137.793C146.731 130.379 152.753 121.018 156.169 110.605C159.586 100.191 160.283 89.0735 158.195 78.3128C156.107 67.5521 151.304 57.508 144.243 49.14"
+                        stroke="#80D4E9"
+                        stroke-width="28"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_1401_2148"
+                        x="0.205078"
+                        y="0.111664"
+                        width="233.168"
+                        height="228.569"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="10" dy="10" />
+                        <feGaussianBlur stdDeviation="25" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.839216 0 0 0 0 0.862745 0 0 0 0 0.898039 0 0 0 1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_1401_2148"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_1401_2148"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="a2n_course-card a2n_completed_course-card">
+              <h3>Enroll Courses</h3>
+              <div class="a2n_course_progress">
+                <div class="a2n_progress_box">
+                  <h2>82<span>%</span></h2>
+                </div>
+                <div class="a2n_progress_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="234"
+                    height="229"
+                    viewBox="0 0 234 229"
+                    fill="none"
+                  >
+                    <g filter="url(#filter0_d_1401_2156)">
+                      <path
+                        d="M50.6417 135.798C58.3526 143.567 67.9207 149.224 78.4321 152.227C88.9435 155.231 100.047 155.481 110.682 152.954C121.318 150.427 131.129 145.207 139.18 137.793C147.231 130.379 153.253 121.018 156.669 110.605C160.086 100.191 160.783 89.0735 158.695 78.3128C156.607 67.5521 151.804 57.508 144.743 49.14"
+                        stroke="#F8B690"
+                        stroke-width="28"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_1401_2156"
+                        x="0.704956"
+                        y="0.111664"
+                        width="233.168"
+                        height="228.569"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="10" dy="10" />
+                        <feGaussianBlur stdDeviation="25" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.929412 0 0 0 0 0.258824 0 0 0 0 0.4 0 0 0 0.2 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_1401_2156"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_1401_2156"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="a2n_course-card a2n_certificate_course-card">
+              <h3>Enroll Courses</h3>
+              <div class="a2n_course_progress">
+                <div class="a2n_progress_box">
+                  <h2>82<span>%</span></h2>
+                </div>
+                <div class="a2n_progress_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="234"
+                    height="229"
+                    viewBox="0 0 234 229"
+                    fill="none"
+                  >
+                    <g filter="url(#filter0_d_1401_2164)">
+                      <path
+                        d="M50.6417 135.798C58.3526 143.567 67.9207 149.224 78.4321 152.227C88.9435 155.231 100.047 155.481 110.682 152.954C121.318 150.427 131.129 145.207 139.18 137.793C147.231 130.379 153.253 121.018 156.669 110.605C160.086 100.191 160.783 89.0735 158.695 78.3128C156.607 67.5521 151.804 57.508 144.743 49.14"
+                        stroke="#80CDA7"
+                        stroke-width="28"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_1401_2164"
+                        x="0.704956"
+                        y="0.111664"
+                        width="233.168"
+                        height="228.569"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="10" dy="10" />
+                        <feGaussianBlur stdDeviation="25" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.384314 0 0 0 0 0.372549 0 0 0 0 1 0 0 0 0.3 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_1401_2164"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_1401_2164"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dashboard Tab End  -->
+
+        <!-- Profile Tab Start  -->
+        <div id="my_profile" class="a2n_dash_tabs">
+          <div class="a2n-section_container">
+            <div class="a2n_p-head">
+              <img
+                src="./assets/images/profile tab img/header setting.webp"
+                alt=""
+              />
+            </div>
+            <div class="a2n-user__container a2n-dash_grid">
+              <div class="a2n-img_box">
+                <img src="./assets/images/Rectangle 37.webp" alt="" />
+                <div class="a2n-img_option">
+                  <input
+                    type="file"
+                    name="profile_image"
+                    id="profile_image"
+                    accept="image/*"
+                  />
+                </div>
+              </div>
+              <div class="user_details">
+                <h4>Emma Taylor</h4>
+                <h6>Your account is ready, you can now apply for advice.</h6>
+              </div>
+            </div>
+            <div class="a2n_p-tab_section">
+              <div class="a2n_p-menu">
+                <ul id="a2n_p-nav">
+                  <li>
+                    <a class="a2n_p-active" href="#edit_profile"
+                      >Edit Profile</a
+                    >
+                  </li>
+                  <li><a href="#password_security">Password & Security</a></li>
+                  <li><a href="#preferences">Preferences & 2FA</a></li>
+                </ul>
+              </div>
+              <div class="a2n_p-tabs__container">
+                <!-- edit profile tab start  -->
+                <div id="edit_profile" class="a2n-p_tab a2n-p_active-tab">
+                  <div class="a2n-form_container">
+                    <h2 class="form_title">Edit Profile</h2>
+                    <form class="a2n-dash_grid" action="#">
+                      <div class="form_group form_group-1">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" />
+                      </div>
+                      <div class="form_group form_group-2">
+                        <label for="sur_name">Surname</label>
+                        <input type="text" name="sur_name" id="sur_name" />
+                      </div>
+                      <div class="form_group form_group-3">
+                        <label for="display_name">Display Name</label>
+                        <input
+                          type="text"
+                          name="display_name"
+                          id="display_name"
+                        />
+                      </div>
+                      <div class="form_submit">
+                        <input type="submit" value="Save" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- edit profile tab end   -->
+                <!-- Password & Security tab start  -->
+                <div id="password_security" class="a2n-p_tab">
+                  <div class="a2n-form_container">
+                    <h2 class="form_title">Update Password</h2>
+                    <form class="a2n-dash_grid" action="#">
+                      <div class="form_group form_group-1">
+                        <label for="current_password">Current Password</label>
+                        <div class="form_group_password">
+                          <input
+                            type="password"
+                            name="current_password"
+                            id="current_password"
+                            placeholder="Enter your current password"
+                          />
+                          <i
+                            id="current_password_toggler"
+                            class="fas fa-eye"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="form_group form_group-2">
+                        <label for="new_password">New Password</label>
+                        <div class="form_group_password">
+                          <input
+                            type="password"
+                            name="new_password"
+                            id="new_password"
+                            placeholder="Enter a new password"
+                          />
+                          <i id="new_password_toggler" class="fas fa-eye"></i>
+                        </div>
+                        <p class="a2n_error">*Please enter a new password</p>
+                      </div>
+                      <div class="form_group form_group-3">
+                        <label for="confirm_password">Confirm Password</label>
+                        <div class="form_group_password">
+                          <input
+                            type="password"
+                            name="confirm_password"
+                            id="confirm_password"
+                            placeholder="Type password to confirm"
+                          />
+                          <i
+                            id="confirm_password_toggler"
+                            class="fas fa-eye"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="form_submit">
+                        <input type="submit" value="Save" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Password & Security tab end   -->
+                <!-- Preferences & 2FA tab start  -->
+                <div id="preferences" class="a2n-p_tab">
+                  <div class="a2n-form_container">
+                    <h2 class="form_title">Preferences & 2FA</h2>
+                    <form class="a2n-dash_grid" action="#">
+                      <div class="form_group">
+                        <h3 class="a2n_notification">
+                          Receive reward notifications...
+                        </h3>
+                        <input
+                          type="checkbox"
+                          name="nxt_notification"
+                          id="nxt_notification"
+                        />
+                      </div>
+                      <div class="form_group">
+                        <h3 class="a2n_notification">
+                          Enable 2FA (Two Factor Authentication) (we will email
+                          you a code when you sign in from a new device)...
+                        </h3>
+                        <input
+                          type="checkbox"
+                          name="fa_notification"
+                          id="fa_notification"
+                        />
+                      </div>
+                      <div class="form_submit">
+                        <input type="submit" value="Save" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Preferences & 2FA tab end   -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Profile Tab End  -->
+
+        <!-- My courses Tab Start  -->
+        <div id="my_courses" class="a2n_dash_tabs">
+          <div class="a2n-dash_grid">
+            <div class="a2n_dash_card a2n_dash_card-1">
+              <h2>53</h2>
+              <div class="course_count">
+                <h5>Enrolled Courses</h5>
+                <img src="./assets/images/Group.svg" alt="" />
+              </div>
+            </div>
+            <div class="a2n_dash_card a2n_dash_card-2">
+              <h2>03</h2>
+              <div class="course_count">
+                <h5>Ongoing Courses</h5>
+                <img src="./assets/images/Group 1000004112.svg" alt="" />
+              </div>
+            </div>
+            <div class="a2n_dash_card a2n_dash_card-3">
+              <h2>96</h2>
+              <div class="course_count">
+                <h5>Completed Courses</h5>
+                <img src="./assets/images/Group 1000004111.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- courses tab container start -->
+          <div class="a2n_c-tab_section">
+            <!-- course tab menu  -->
+            <div class="a2n_c-menu">
+              <ul id="a2n_c-nav">
+                <li>
+                  <a class="a2n_c-active" href="#enrolled_courses"
+                    >Enrolled Courses</a
+                  >
+                </li>
+                <li><a href="#ongoing_courses">Ongoing Courses</a></li>
+                <li><a href="#completed_courses">Completed Courses</a></li>
+              </ul>
+            </div>
+            <div class="a2n_c-tabs__container">
+              <!-- Enrolled Courses tab start  -->
+              <div id="enrolled_courses" class="a2n-c_tab a2n-c_active-tab">
+                <div class="a2n-course__grid">
+                  <!-- course #1 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #1 end  -->
+                  <!-- course #2 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #2 end  -->
+                  <!-- course #3 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #3 end  -->
+                  <!-- course #4 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #4 end  -->
+                  <!-- course #5 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #5 end  -->
+                  <!-- course #6 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #6 end  -->
+                  <!-- course #7 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #7 end  -->
+                  <!-- course #8 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #8 end  -->
+                </div>
+              </div>
+              <!-- Enrolled Courses tab end   -->
+              <!-- Ongoing Courses tab start  -->
+              <div id="ongoing_courses" class="a2n-c_tab">
+                <div class="a2n-course__grid">
+                  <!-- course #1 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #1 end  -->
+                  <!-- course #2 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #2 end  -->
+                  <!-- course #3 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #3 end  -->
+                </div>
+              </div>
+              <!-- Ongoing Courses tab end   -->
+              <!-- Completed Courses tab start  -->
+              <div id="completed_courses" class="a2n-c_tab">
+                <div class="a2n-course__grid">
+                  <!-- course #1 start  -->
+                  <div class="a2n-course__card">
+                    <div class="a2n-course__thumbnail">
+                      <a href="#">
+                        <img
+                          src="./assets/images/Courses/Image (5).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="a2n-course__content">
+                      <span class="a2n-course__tip">
+                        <a href="#"> Premium </a>
+                      </span>
+                      <h3 class="a2n-course__title">
+                        <a href="#"> Figma UI UX Design.. </a>
+                      </h3>
+                      <div class="a2n-course__meta a2n-course__details">
+                        <span class="a2n-course__count-ratings"> 4.3 </span>
+                        <span class="course-review">
+                          <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 100%">
+                              <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="a2n-course__count-reviews">
+                          (16,325)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- course #1 end  -->
+                </div>
+              </div>
+              <!-- Completed Courses tab end   -->
+            </div>
+          </div>
+          <!-- courses tab container end  -->
+        </div>
+        <!-- My courses Tab End  -->
+
+        <!-- My certificates Tab Start  -->
+        <div id="my_certificates" class="a2n_dash_tabs"></div>
+        <!-- My certificates Tab End  -->
+
+        <!-- Unlimited learning Tab Start  -->
+        <div id="my_learning" class="a2n_dash_tabs"></div>
+        <!-- Unlimited learning Tab End  -->
+
+        <!-- Saved courses Tab Start  -->
+        <div id="my_saved_courses" class="a2n_dash_tabs">
+          <div class="a2n-course__grid">
+            <!-- course #1 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #1 end  -->
+            <!-- course #2 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #2 end  -->
+            <!-- course #3 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #3 end  -->
+            <!-- course #4 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #4 end  -->
+            <!-- course #5 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #5 end  -->
+            <!-- course #6 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #6 end  -->
+            <!-- course #7 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #7 end  -->
+            <!-- course #8 start  -->
+            <div class="a2n-course__card">
+              <div class="a2n-course__thumbnail">
+                <a href="#">
+                  <img src="./assets/images/Courses/Image (5).webp" alt="" />
+                </a>
+              </div>
+              <div class="a2n-course__content">
+                <span class="a2n-course__tip">
+                  <a href="#"> Premium </a>
+                </span>
+                <h3 class="a2n-course__title">
+                  <a href="#"> Figma UI UX Design.. </a>
+                </h3>
+                <div class="a2n-course__meta a2n-course__details">
+                  <span class="a2n-course__count-ratings"> 4.3 </span>
+                  <span class="course-review">
+                    <div class="star-ratings">
+                      <div class="fill-ratings" style="width: 100%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="a2n-course__count-reviews"> (16,325) </span>
+                </div>
+              </div>
+            </div>
+            <!-- course #8 end  -->
+          </div>
+        </div>
+        <!-- Saved courses Tab End  -->
+
+        <!-- Special Offers Tab Start  -->
+        <div id="my_offers" class="a2n_dash_tabs"></div>
+        <!-- Special Offers Tab End  -->
+
+        <!-- Orders Tab Start  -->
+        <div id="my_orders" class="a2n_dash_tabs"></div>
+        <!-- Orders Tab End  -->
+
+        <!-- Student card Tab Start  -->
+        <div id="my_student_card" class="a2n_dash_tabs"></div>
+        <!-- Student card Tab End  -->
+
+        <!-- Support Tab Start  -->
+        <div id="my_support" class="a2n_dash_tabs"></div>
+        <!-- Support Tab End  -->
+      </main>
+    </div>
+    <!-- Dashboard Area End  -->
+
+    <!-- Js links Here  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- font awesome 5 here  -->
+    <script
+      src="https://kit.fontawesome.com/0793d75093.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
+  </body>
+</html>
