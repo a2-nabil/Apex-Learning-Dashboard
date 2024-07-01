@@ -167,18 +167,87 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // profile tab
-  setupTabNavigation(
-    "#a2n_p-nav li a",
-    ".a2n-p_tab",
-    "a2n_p-active",
-    "a2n-p_active-tab"
-  );
-  // courses tab
+  // My courses tab
   setupTabNavigation(
     "#a2n_c-nav li a",
     ".a2n-c_tab",
     "a2n_c-active",
     "a2n-c_active-tab"
   );
+  // Certificate tab
+  setupTabNavigation(
+    "#a2n_p-nav li a",
+    ".a2n-p_tab",
+    "a2n_p-active",
+    "a2n-p_active-tab"
+  );
+  // Transcript tab
+  setupTabNavigation(
+    "#a2n_t-nav li a",
+    ".a2n-t_tab",
+    "a2n_t-active",
+    "a2n-t_active-tab"
+  );
+
+  function filterCards(inputSelector, cardSelector, titleSelector) {
+    const inputField = document.querySelector(inputSelector);
+    const cards = document.querySelectorAll(cardSelector);
+
+    inputField.addEventListener("input", function () {
+      const inputValue = inputField.value.trim().toLowerCase();
+
+      cards.forEach((card) => {
+        const title = card
+          .querySelector(titleSelector)
+          .textContent.toLowerCase();
+
+        if (title.includes(inputValue)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  }
+
+  // my course search
+  filterCards(".nxt_input_field", ".a2n-course__card", ".a2n-course__title a");
+});
+
+// for nxtModal
+function nxtToggleModal(modalId, closeBtnId) {
+  const modal = document.getElementById(modalId);
+  const closeButton = document.getElementById(closeBtnId);
+  const closeFormButton = document.querySelector(".cancelForm_btn");
+  modal.classList.add("nxt_tab_active");
+
+  closeButton.onclick = function () {
+    modal.classList.remove("nxt_tab_active");
+  };
+
+  closeFormButton.onclick = function () {
+    modal.classList.remove("nxt_tab_active");
+  };
+}
+
+// activate the intlTelInput
+const nxtCountryInput = document.querySelector("#phone");
+window.intlTelInput(nxtCountryInput, {
+  separateDialCode: true,
+  initialCountry: "gb",
+});
+
+// for certificate js
+const srsRadioButtons = document.querySelectorAll(
+  'input[type="radio"][name="certificate"]'
+);
+
+const srsOrderButton = document.getElementById("srs_orderBtn");
+
+srsRadioButtons.forEach((radioButton) => {
+  radioButton.addEventListener("change", function () {
+    const isChecked = [...srsRadioButtons].some((radio) => radio.checked);
+
+    srsOrderButton.disabled = !isChecked;
+  });
 });
