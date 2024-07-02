@@ -37,14 +37,15 @@ confirmPasswordToggler.addEventListener("click", function () {
 //  main tabs and nav
 document.addEventListener("DOMContentLoaded", function () {
   const nxtNavbarToggle = document.getElementById("a2n_navbar-toggle");
+  const nxtSidebar = document.querySelector(".a2n-nxt_sidebar");
   const nxtNavList = document.getElementById("a2n_nav-list");
   const nxtTabs = document.querySelectorAll(".a2n_dash_tabs");
   const nxtNavLinks = document.querySelectorAll("#a2n_nav-list li a");
   const nxtUserNavLinks = document.querySelectorAll(".a2n_user_log ul li a");
 
   nxtNavbarToggle.addEventListener("click", function () {
-    nxtNavList.classList.toggle("a2n_show_nav");
-    nxtNavbarToggle.classList.toggle("a2n_nav_active");
+    nxtSidebar.classList.toggle("a2n_sidebar_active");
+    nxtNavbarToggle.classList.toggle("a2n_toggle_active");
   });
 
   // Function to remove active class from all nav links
@@ -98,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
       removeActiveClass();
       link.classList.add("a2n_active");
       nxtNavList.classList.remove("a2n_show_nav");
-      nxtNavbarToggle.classList.remove("a2n_nav_active");
       const targetTabId = this.getAttribute("href").substring(1);
       window.location.hash = targetTabId;
       changeTab(targetTabId);
