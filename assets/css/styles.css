@@ -87,6 +87,10 @@ body::-webkit-scrollbar {
   flex: 1 1 0%;
   overflow: hidden;
 }
+.a2n-nxt_dashboard .a2n-nxt_sidebar #a2n_nav-list  {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
 .a2n-nxt_dashboard .a2n-nxt_sidebar #a2n_nav-list .a2n_nav_border {
   margin: 0 0 32px;
   border: 0;
@@ -1161,6 +1165,17 @@ body::-webkit-scrollbar {
   font-weight: 700;
   line-height: 32px;
 }
+.a2n_empty_text p {
+  margin: 0;
+  color: var(--a2n-text-color);
+  font-family: var(--a2n-primary-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.a2n_empty_text p > a {
+  color: #3b82f6;
+}
 #my_orders .payment_history {
   padding-bottom: 45px;
   border-bottom: 1px solid #e5e7eb;
@@ -2060,6 +2075,18 @@ body::-webkit-scrollbar {
   .nxt-content__wrapper {
     padding: 8px 32px;
   }
+  .a2n_empty_text h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .a2n-nxt_dashboard .a2n-nxt_sidebar .user_avatar_box img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .a2n-nxt_dashboard .a2n_sidebar_active .a2n_user_box {
+    margin: 32px 0 0;
+  }
 }
 @media (max-width: 639px) {
   /* dashboard mobile responsive here  */
@@ -2130,14 +2157,6 @@ body::-webkit-scrollbar {
     font-size: 12px;
     line-height: 18px;
     height: 40px;
-  }
-  .a2n-nxt_dashboard .a2n-nxt_sidebar .user_avatar_box img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  .a2n-nxt_dashboard .a2n_sidebar_active .a2n_user_box {
-    margin: 32px 0 0;
   }
 }
 /* sidebar after toggled css start  */
