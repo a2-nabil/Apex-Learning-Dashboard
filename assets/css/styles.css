@@ -149,6 +149,7 @@ body::-webkit-scrollbar {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  word-break: break-all;
 }
 .a2n-nxt_dashboard .a2n-nxt_sidebar .user_details h4 {
   margin: 0;
@@ -456,6 +457,7 @@ body::-webkit-scrollbar {
 .cancelForm_btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   color: var(--a2n-primary-color) !important;
   text-align: center;
@@ -659,7 +661,6 @@ body::-webkit-scrollbar {
 }
 /* unclaimed certificate css start  */
 .srs_certificate_card_pr {
-  margin: 0 auto;
   width: 326px;
   background: var(--a2n-white);
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
@@ -1146,7 +1147,7 @@ body::-webkit-scrollbar {
   font-family: var(--a2n-primary-font);
   font-size: 16px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 24px;
 }
 .a2n_empty_text {
   margin: 160px 0;
@@ -1159,6 +1160,52 @@ body::-webkit-scrollbar {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+}
+#my_orders .payment_history {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e5e7eb;
+  overflow-x: auto;
+  width: 100%;
+}
+.a2n-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.a2n-table thead {
+  background-color: #e1e9fa;
+}
+.a2n-table thead th {
+  color: var(--a2n-black);
+  font-family: var(--a2n-primary-font);
+  font-size: 16px;
+  padding: 16px;
+}
+.a2n-table tbody {
+  background-color: transparent;
+  transition: 0.1s linear;
+}
+.a2n-table tbody:hover {
+  background-color: var(--a2n-white);
+}
+.a2n-table tbody tr:first-child {
+  border-top: none;
+}
+.a2n-table tbody tr {
+  border-top: 1px solid rgba(176, 187, 192, 1);
+}
+.a2n-table tbody th {
+  color: var(--a2n-black);
+  font-family: var(--a2n-primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 31px 15px;
+}
+.a2n-table tbody th span.btnforstatus {
+  background-color: #bae7cb;
+  font-size: 14px;
+  padding: 9px;
+  border-radius: 5px;
 }
 /* Payment History tab css End  */
 
@@ -1346,7 +1393,6 @@ body::-webkit-scrollbar {
 }
 .a2n-profile_container .profile_avatar_box img {
   width: 200px;
-  height: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
   max-width: 100%;
@@ -1370,6 +1416,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   line-height: 14px;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 .a2n-profile__upload input[type="file"] {
   appearance: none;
@@ -1796,6 +1843,28 @@ body::-webkit-scrollbar {
     font-size: 14px;
     padding: 14px;
   }
+  /* certificate tab responsive here  */
+  .a2n_c-nav_items {
+    gap: 16px;
+  }
+  .nxt-content__wrapper .a2n-course__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  /* profile tab responsive here  */
+  .a2n-profile_container .profile_contents {
+    grid-column: span 4;
+  }
+  .a2n-profile_container .profile-details__wrapper {
+    grid-column: span 8;
+  }
+  #submitProfileForm,
+  .cancelForm_btn {
+    padding: 14px;
+    font-weight: 600;
+  }
+  .cancelForm_btn {
+    font-weight: 700;
+  }
 }
 @media (max-width: 1023px) {
   /* dashboard responsive here  */
@@ -1843,6 +1912,27 @@ body::-webkit-scrollbar {
   }
   .a2n-course__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  /* certificate tab responsive here  */
+  .nxt-content__wrapper .a2n-course_search form {
+    width: 370px !important;
+    max-width: 100%;
+  }
+  .nxt-content__wrapper .a2n-course__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  /* profile tab responsive here  */
+  .a2n-profile_container .profile_contents {
+    grid-column: span 12;
+  }
+  .a2n-profile_container .profile-details__wrapper {
+    grid-column: span 12;
+  }
+  /* Payment History tab responsive here  */
+  .a2n-table thead th,
+  .a2n-table tbody th {
+    font-size: 12px;
+    white-space: nowrap;
   }
 }
 @media (max-width: 767px) {
@@ -1893,13 +1983,82 @@ body::-webkit-scrollbar {
     font-size: 14px;
     height: 48px;
   }
-  .a2n-course__action input[type="submit"].button, .a2n-course__action a.button {
+  .a2n-course__action input[type="submit"].button,
+  .a2n-course__action a.button {
     font-size: 12px;
     padding: 8px 14px;
   }
   .a2n-course__card .a2n-course__content .a2n-course__title {
     font-size: 18px;
     line-height: 28px;
+  }
+  /* certificate tab responsive here  */
+  .nxt-content__wrapper .a2n-course_search form {
+    width: 296px !important;
+    max-width: 100%;
+  }
+  .nxt-content__wrapper .a2n-course__grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  .a2n_top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .nxt-content__wrapper {
+    padding: 20px 16px;
+  }
+  .a2n_c-nav_items {
+    gap: 0px;
+  }
+  .a2n_c-nav_items select {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 40px 0 12px;
+  }
+  /* profile tab responsive here  */
+  #my_profile {
+    padding: 32px;
+  }
+  .a2n-tab__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .a2n-profile_container .profile-details__wrapper {
+    padding: 16px;
+  }
+  .a2n-profile_container .user_details h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .a2n_profile_form .form_group:not(.form_group-1) input {
+    height: 40px;
+    padding: 8px 16px;
+  }
+  .a2n_profile_form .form_group {
+    grid-column: span 12 !important;
+  }
+  .a2n_profile_form .form_group-7 {
+    flex-direction: column;
+  }
+  #submitProfileForm,
+  .cancelForm_btn {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 11px 16px;
+    height: 40px;
+  }
+  .a2n_profile_form .iti__selected-country {
+    padding-left: 8px;
+  }
+  .a2n_profile_form #phone[style] {
+    padding-left: 115px !important;
+  }
+  .a2n-billing_text h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .nxt-content__wrapper {
+    padding: 8px 32px;
   }
 }
 @media (max-width: 639px) {
@@ -1937,6 +2096,48 @@ body::-webkit-scrollbar {
   }
   #a2n_c-nav li a {
     height: fit-content;
+  }
+  /* certificate tab responsive here  */
+  .srs_certificate_card_pr {
+    width: 100%;
+  }
+  /* profile tab responsive here  */
+  .a2n-profile_container .profile-inner_items .user_details h4,
+  .a2n-profile_container .profile-inner_items .user_details h5 {
+    font-size: 12px;
+    line-height: 18px;
+    word-break: break-all;
+  }
+  .a2n_profile_form .form_submit {
+    justify-content: space-between;
+  }
+  .a2n_profile_form .form_submit .cancelForm_btn,
+  .a2n_profile_form .form_submit #submitProfileForm {
+    width: 100%;
+  }
+  .a2n-form_container {
+    padding: 0 32px 56px;
+  }
+  .a2n-form_container form .form_group input,
+  .a2n_profile_form .form_group input {
+    height: 40px;
+  }
+  .a2n-form_container form .form_group .form_group_password > i {
+    width: 40px;
+    height: 40px;
+  }
+  .a2n-form_container form .form_submit input[type="submit"] {
+    font-size: 12px;
+    line-height: 18px;
+    height: 40px;
+  }
+  .a2n-nxt_dashboard .a2n-nxt_sidebar .user_avatar_box img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .a2n-nxt_dashboard .a2n_sidebar_active .a2n_user_box {
+    margin: 32px 0 0;
   }
 }
 /* sidebar after toggled css start  */
