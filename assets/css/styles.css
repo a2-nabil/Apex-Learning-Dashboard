@@ -87,7 +87,7 @@ body::-webkit-scrollbar {
   flex: 1 1 0%;
   overflow: hidden;
 }
-.a2n-nxt_dashboard .a2n-nxt_sidebar #a2n_nav-list  {
+.a2n-nxt_dashboard .a2n-nxt_sidebar #a2n_nav-list {
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -1182,6 +1182,17 @@ body::-webkit-scrollbar {
   overflow-x: auto;
   width: 100%;
 }
+#my_orders .payment_history::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+#my_orders .payment_history::-webkit-scrollbar-thumb {
+  background: #c6c5c6;
+  border-radius: 100vh;
+}
+#my_orders .payment_history::-webkit-scrollbar-track {
+  border-radius: 30px;
+}
 .a2n-table {
   width: 100%;
   text-align: left;
@@ -1588,6 +1599,7 @@ body::-webkit-scrollbar {
   display: inline-flex;
   font-weight: 600;
   gap: 4px;
+  margin-bottom: 4px;
 }
 .a2n-modal__container .a2n_profile_form {
   width: 100%;
@@ -2087,6 +2099,9 @@ body::-webkit-scrollbar {
   .a2n-nxt_dashboard .a2n_sidebar_active .a2n_user_box {
     margin: 32px 0 0;
   }
+  .nxt_modal_container {
+    padding: 20px 16px;
+  }
 }
 @media (max-width: 639px) {
   /* dashboard mobile responsive here  */
@@ -2136,6 +2151,7 @@ body::-webkit-scrollbar {
     word-break: break-all;
   }
   .a2n_profile_form .form_submit {
+    margin-top: 16px;
     justify-content: space-between;
   }
   .a2n_profile_form .form_submit .cancelForm_btn,
@@ -2143,7 +2159,7 @@ body::-webkit-scrollbar {
     width: 100%;
   }
   .a2n-form_container {
-    padding: 0 32px 56px;
+    padding: 0 24px 56px;
   }
   .a2n-form_container form .form_group input,
   .a2n_profile_form .form_group input {
@@ -2157,6 +2173,9 @@ body::-webkit-scrollbar {
     font-size: 12px;
     line-height: 18px;
     height: 40px;
+  }
+  .nxt-content__wrapper {
+    padding: 20px 16px;
   }
 }
 /* sidebar after toggled css start  */

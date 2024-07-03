@@ -212,6 +212,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // my course search
   filterCards(".nxt_input_field", ".a2n-course__card", ".a2n-course__title a");
+  // Certificates search 
+  filterCards("#my_certificates .nxt_input_field", ".srs_certificate_card_pr", ".srs_title_content p");
 });
 
 // for nxtModal
