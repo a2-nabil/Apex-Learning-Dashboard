@@ -32,6 +32,9 @@ ol {
 body::-webkit-scrollbar {
   display: none;
 }
+.foy-error-message {
+  margin: 0;
+}
 /*# Dashboard common Css Start  */
 .a2n-nxt_dashboard {
   width: 100%;
@@ -254,6 +257,7 @@ body::-webkit-scrollbar {
   background: rgb(63, 130, 252);
 }
 .a2n_dash_card .course_count h2 {
+  margin: 0;
   color: var(--a2n-black);
   font-family: var(--a2n-primary-font);
   font-size: 32px;
@@ -2208,19 +2212,3 @@ body::-webkit-scrollbar {
   }
 }
 /* sidebar after toggled css end  */
-
-/* new for update  */
-.srs_certificate_card_pr {
-  max-width: 100%;
-}
-.a2n_dash_card .course_count h5 {
-  margin: 0;
-}
-.foy-error-message {
-  margin: 0;
-}
-@media (max-width: 1425px) {
-  .a2n_dash_card .course_count h2 {
-    margin: 0;
-  }
-}
