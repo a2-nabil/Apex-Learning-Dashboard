@@ -1,0 +1,101 @@
+/* remove prev heights and add this  */
+.a2n-nxt_dashboard {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 84px);
+}
+.a2n-course__card .a2n-course__content .a2n-course__title {
+  height: 60px;
+}
+/* height adjusted  */
+#my_certificates .a2n-course__grid:has(.a2n_modal.nxt_tab_active) {
+  height: 50vh;
+}
+.a2n-nxt_dashboard .a2n-nxt_sidebar #a2n_nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.a2n-course__action input[type="submit"].button {
+  margin: 0;
+}
+
+/* replace 365px media query  */
+@media (max-width: 449px) {
+  .srs_certificate_image_wrapper .course_name {
+    top: 41%;
+    font-size: 50%;
+    white-space: normal;
+    text-align: center;
+  }
+  .srs_certificate_image_wrapper .learner_name {
+    top: 33%;
+    font-size: 50%;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* no course css start  */
+.a2n_empty_course {
+  margin: 24px 0;
+}
+.a2n_empty_course p > a {
+  color: var(--a2n-primary-color);
+}
+.srs_no_course_pr {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid rgb(237, 237, 237);
+  background: var(--a2n-white);
+  padding: 64px 0;
+}
+.srs_no_course_pr .srs_all_content_wrapper {
+  text-align: center;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_svg_wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--a2n-text-color2);
+  font-family: var(--a2n-primary-font);
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_certificate_details {
+  margin: 0 16px 16px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--a2n-black);
+  font-family: var(--a2n-primary-font);
+  text-align: left;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_certificate_details p {
+  margin: 0;
+  padding: 4px 0;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_all_course_btn {
+  display: inline-block;
+  background-color: var(--a2n-primary-color);
+  padding: 14px 28px;
+  white-space: nowrap;
+  border-radius: 2px;
+  color: var(--a2n-white);
+  font-weight: 600;
+  font-family: var(--a2n-primary-font);
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_all_course_btn:hover {
+  background-color: #194a96;
+}
+/* no course css end  */

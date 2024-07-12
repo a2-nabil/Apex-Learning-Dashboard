@@ -89,6 +89,9 @@ body::-webkit-scrollbar {
   margin: 0;
   flex: 1 1 0%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .a2n-nxt_dashboard .a2n-nxt_sidebar #a2n_nav-list {
   overflow-y: scroll;
@@ -452,6 +455,7 @@ body::-webkit-scrollbar {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  height: 60px;
 }
 .a2n-course__card .a2n-course__content .a2n-course__title a {
   display: block;
@@ -483,6 +487,7 @@ body::-webkit-scrollbar {
   transition: all 0.3s ease;
   border: 1px solid var(--a2n-primary-color) !important;
   cursor: pointer;
+  margin: 0;
 }
 .a2n-course__action input[type="submit"].button:hover,
 .a2n-course__action a.button:hover,
@@ -607,6 +612,13 @@ body::-webkit-scrollbar {
 }
 #my_certificates .a2n-p_tab.a2n-p_active-tab {
   display: block;
+}
+#my_certificates .a2n-course__grid:has(.a2n_modal.nxt_tab_active) {
+  height: 50vh;
+  overflow-y: scroll;
+}
+#my_certificates .a2n-course__grid::-webkit-scrollbar {
+  display: none;
 }
 .nxt-content__wrapper {
   position: relative;
@@ -1840,6 +1852,104 @@ body::-webkit-scrollbar {
   border-radius: 30px;
 }
 /* Modal css end  */
+.srs_certificate_image_wrapper {
+  position: relative;
+}
+.srs_certificate_image_wrapper .learner_name {
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Open sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  white-space: nowrap;
+}
+.srs_certificate_image_wrapper .course_name {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a171b;
+  white-space: nowrap;
+}
+@media (max-width: 639px){
+  .srs_certificate_image_wrapper .learner_name {
+  font-size: 14px;
+  }
+.srs_certificate_image_wrapper .course_name {
+  top: 42%;
+  font-size: 10px;
+  }
+}
+/* no course css start  */
+.a2n_empty_course {
+  margin: 24px 0;
+}
+.a2n_empty_course p > a{
+  color: var(--a2n-primary-color);
+}
+.srs_no_course_pr {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid rgb(237, 237, 237);
+  background: var(--a2n-white);
+  padding: 64px 0;
+}
+.srs_no_course_pr .srs_all_content_wrapper {
+  text-align: center;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_svg_wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--a2n-text-color2);
+  font-family: var(--a2n-primary-font);
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_certificate_details {
+  margin: 0 16px 16px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--a2n-black);
+  font-family: var(--a2n-primary-font);
+  text-align: left;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_certificate_details p {
+  margin: 0;
+  padding: 4px 0;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_all_course_btn {
+  display: inline-block;
+  background-color: var(--a2n-primary-color);
+  padding: 14px 28px;
+  white-space: nowrap;
+  border-radius: 2px;
+  color: var(--a2n-white);
+  font-weight: 600;
+  font-family: var(--a2n-primary-font);
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.srs_no_course_pr .srs_all_content_wrapper .srs_all_course_btn:hover {
+  background-color: #194a96;
+}
+/* no course css end  */
+
 
 /*# responsive all css here */
 @media (max-width: 1535px) {
