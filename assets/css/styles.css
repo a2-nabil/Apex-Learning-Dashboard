@@ -962,7 +962,8 @@ body::-webkit-scrollbar {
   .srs_card_pr
   .srs_card_content_wrapper
   .srs_btn_wrapper
-  .srs_btn {
+  .srs_btn, 
+  .certificate_download_btn {
   width: 100%;
   background-color: var(--a2n-primary-color);
   padding: 11px 16px;
@@ -982,7 +983,8 @@ body::-webkit-scrollbar {
   .srs_card_pr
   .srs_card_content_wrapper
   .srs_btn_wrapper
-  .srs_btn:hover {
+  .srs_btn:hover, 
+  .certificate_download_btn:hover {
   background-color: #194a96;
 }
 .srs_content_wrapper .srs_course_details_wrapper .srs_certificate_order_pr {
